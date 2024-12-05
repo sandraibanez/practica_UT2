@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section>
+        <h1>Formulario</h1>
+        <form action="mailto: validocubaalessandro@gmail.com" method="post" enctype="multipart/form-data">
+            <div class="formulario_info">
+                <div class="formulario_info_item">
+                    <h2>Escribe tu nombre</h2>
+                    <input type="text" name="nombre" size="25" placeholder="Introduzca su nombre">
+                    <h2>Escriba su apellido</h2>
+                    <input type="text" name="apellido" size="25" placeholder="Introduzca su apellido">
+                </div>
+                <div class="formulario_info_item">
+                    <h2>Escribe tu edad</h2>
+                    <input type="text" name="edad" size="3" placeholder="Edad">
+
+                    <h2>Introduzca su DNI</h2>
+                    <input type="text" name="DNI" maxlength="9" placeholder="DNI">
+                </div>
+            </div>
+            <h2>Observaciones</h2>
+            <textarea name="Observaciones" rows="10" cols="50" placeholder="Escriba sus Observaciones en este recuadro"></textarea>
+            <h2>Elija un producto</h2>
+            <table>
+                <tr>
+                    <th>
+                        <input type="radio" name="optativa" value="informática" checked>Producto 1
+                    </th>
+                    <th>
+                        <input type="radio" name="optativa" value="gimnacia"> Producto 2
+                    </th>
+                    <th>
+                        <input type="radio" name="optativa" value="Filosofia"> Producto 3
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="producto1_img">
+                            <img src="img/imagen_2.png" alt="producto 1">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="producto2_img">
+                            <img src="img/imagen_3.png" alt="producto 2">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="producto3_img">
+                            <img src="img/imagen_4.png" alt="producto 3">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="button_info">
+                <div class="button_info_item">
+                    <input type="submit" value="Enviar datos">
+                    <input type="reset" value="Resetar Datos">
+                </div>
+                <input type="button" value="cerrar ventanas" onclick="window.close();">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

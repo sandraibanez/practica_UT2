@@ -1,0 +1,436 @@
+/* DISEÑO DE LA PAGINA */
+/* color del fondo de la pagina */
+body {
+    background-color: #e6dcb1;
+}
+
+/* MENU */
+
+/* color de fondo del menu, distribucion del menu y posicion donde se va a encontrar */
+header {
+    background-color: #ceac5c;
+    padding: 15px;
+    margin-top: 10px;
+    height: 110px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #e6dcb1;
+    border-color: #e6dcb1;
+    position: sticky;
+    z-index: 1000;
+    top: 20px;
+}
+/* color y alineacion de donde se va a encontrar las etiquetas h1 tanto en menu como en el resto de la pagina web*/
+h1 {
+    color: #034f1b;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+/* color y alineacion de donde se va a encontrar las etiquetas h2 tanto en menu como en el resto de la pagina web*/
+h2 {
+    color: #7e121d;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size:large;
+}
+/* espacio que va a utilizar los elementos del menu y la distribucion que van a tener */
+#primary_nav_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+/* el menu esta hecho apartir de una lista entonces se le quita el estilo de la lista (el punto o el numero) 
+y se le indica el fomato que va a tener el contorno del ul */
+#primary_nav_wrap ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #e6dcb1;
+    background: #ceac5c;
+}
+/* al ser una lista lo que le hace que vaya a una pagina u otra es el a 
+por lo que se le indica como se tiene que ver, en que color, que tamaño de letra y que tipo de letra */
+#primary_nav_wrap ul a {
+    display: block;
+    color: #bd3634;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0 15px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+/* la posicion donde se va a encontrar cada elemento li */
+#primary_nav_wrap ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0
+}
+/* cuando pasemos por encima cambie de color para que sea mas intuitivo para el usuario */
+#primary_nav_wrap ul li:hover {
+    background: #e9c268;
+    border-radius: 30px;
+}
+/* FIN DEL MENU */
+/* como se va a distrivuir lo que este dentro de la section y el margen que va a tener 
+y esto afecta a toda la pagina web */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+/* HOME */
+
+/* para que la imagen del Home se acople a los distintos tamaños de pantalla se aplica el display:flex; y se ajusta a lo que necesitamos
+para que la imagen sea fija y haga ese ejecto se tiene que poner directamente desde el css
+despues ya solo se le ajusta que efecto queremos, el alto, el ancho, la posicion y los margenes
+y para el titulo se le ajusta el color, tamaño y como la queremos ver 
+*/
+#Home {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('img/home.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    width: 101%;
+    color: #f0d149;
+    text-decoration: none;
+    font-size: 6em;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+/* ajustamos los margenes, el tamaño del contenedor, la decoracion que va a tener y se ajusta para que se acople a los distintos tamaños de pantalla  */
+.texto {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    height: 100%;
+    border: 2px solid #ceac5c;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dentro del contenedor que espacio va a tener el texto */
+.texto p {
+    height: 100%;
+    width: 50%;
+}
+/* tamaño que va a disponer este contenedor y ajustar la imagen para que se acople a los distintos tamaños de pantalla */
+#Formularios {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+}
+/* tamaño que va a disponer la imagen y como se va a ver  */
+#Formularios img {
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 90px;
+    display: block;
+}
+/* posicion exacta donde se va a encontrar el texto y que estilo va a tener  */
+.formulario a {
+    color: #7e121d;
+    text-decoration: none;
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+}
+
+/* FIN DEL HOME */
+
+/* IMAGES */
+
+/* para que la imagen del Home se acople a los distintos tamaños de pantalla se aplica el display:flex; y se ajusta a lo que necesitamos
+para que la imagen sea fija y haga ese ejecto se tiene que poner directamente desde el css
+despues ya solo se le ajusta que efecto queremos, el alto, el ancho, la posicion y los margenes
+y para el titulo se le ajusta el color, tamaño y como la queremos ver 
+*/
+#Images {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('img/image_1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    width: 102%;
+    right: 19px;
+    color: #f0d149;
+    text-decoration: none;
+    font-size: 6em;
+    font-weight: bold;
+    margin-top: 90px;
+    margin-bottom: 75px;
+}
+/* espacio de ancho que va a tener la lista */
+.lista {
+
+    width: 100%;
+}
+/* ajustar la distribucion de los componentes de la lista */
+.lista .lista_item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+}
+/* poner una imagen de fondo y ajustar su diseño*/
+.producto1 {
+    background-image: url('img/imagen_2_fija.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 90px;
+    display: block;
+}
+/* poner una imagen de fondo y ajustar su diseño*/
+.producto2 {
+    background-image: url('img/imgen_3_fija.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 90px;
+    display: block;
+}
+/* poner una imagen de fondo y ajustar su diseño*/
+.producto3 {
+    background-image: url('img/imagen_4_fija.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 90px;
+    display: block;
+}
+/* ajustar a la posicion exacta donde se va a ver la imagen  */
+.producto2 img {
+    transform: translate(-25%, 10%);
+}
+/* ajustar a la posicion exacta donde se va a ver la imagen  */
+.producto3 img {
+    transform: translate(70%, 2%);
+}
+/* el color de la etiqueta de h2 */
+li .texto h2 {
+    color: #7e121d;
+}
+
+/* FIN DE IMAGES */
+
+/* TABLE */
+
+/* para que la imagen del Home se acople a los distintos tamaños de pantalla se aplica el display:flex; y se ajusta a lo que necesitamos
+para que la imagen sea fija y haga ese ejecto se tiene que poner directamente desde el css
+despues ya solo se le ajusta que efecto queremos, el alto, el ancho, la posicion y los margenes
+y para el titulo se le ajusta el color, tamaño y como la queremos ver 
+*/
+#Table {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('img/tabla.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    width: 102%;
+    right: 19px;
+    color: #f0d149;
+    text-decoration: none;
+    font-size: 6em;
+    font-weight: bold;
+    margin-top: 90px;
+    margin-bottom: 75px;
+}
+/* el diseño de toda la tabla por fuera */
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* el diseño del borde de th y td */
+th,
+td {
+    border: 1px solid #e6dcb1;
+    padding: 12px;
+    text-align: center;
+}
+/* el color de fondo, el color de la letra y el tamaño de la letra */
+th {
+    background-color: #ceac5c;
+    color: #ffffff;
+    font-size: 18px;
+}
+/* el color de fondo, el color de la letra y el tamaño de la letra */
+td {
+    background-color: #ffffff;
+    color: #333;
+    font-size: 16px;
+}
+/* el tamaño de las imagenes de la tabla */
+table img {
+    height: 50%;
+    width: 50%;
+}
+/* color, estilo y tamaño del texto */
+table a {
+    color: #7e121d;
+    text-decoration: none;
+    font-size: 3em;
+}
+/* posicion exacta de la imagen */
+.producto1_img {
+    transform: translate(-1%, -25%);
+}
+/* posicion exacta de la imagen */
+.producto2_img {
+    transform: translate(-12%, 6%);
+}
+/* posicion exacta de la imagen */
+.producto3_img {
+    transform: translate(-1%, 1%);
+}
+
+/* FIN DE TABLES */
+
+/* FORMULARIO */
+
+/* ajustar como se van a distribuir los componentes dentro de from */
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+/* el espacio de ancho que va a tener y ajustar como se van a distribuir los componentes */
+.formulario_info {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+/* ajustar como se van a distribuir los componentes */
+.formulario_info_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+/* ajustar los margenes de los componentes del formulario_info_item como los del button_info_item */
+.formulario_info_item input, .button_info_item input {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/*  ajustar como se van a distribuir los componentes */
+.button_info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+/*  ajustar como se van a distribuir los componentes */
+.button_info_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 10px;
+}
+/* poner el estilo a los bootnes y quitar el borde */
+.button_info input{
+    border-radius: 20px;
+    background-color:#ceac5c;
+    border:none;
+}
+/* cuando se pase por encima que cambie de color */
+.button_info input:hover{
+    background-color: #e6dcb1;
+}
+/* el estilo del input del formulario_info_item, poner el texto centrado y que al pulsar no se vea los bordes*/
+.formulario_info_item input{
+    border-radius: 5px;
+    border:none;
+    background-color:#e6dcb1;
+    text-align: center;
+    outline: none;
+}
+/* cuando se pulse para escribir y se termine de escribir que siga mantenindo los mismos estilos */
+.formulario_info_item input:focus, input:active{
+    border-radius: 5px;
+    border:none;
+    background-color:#e6dcb1;
+    text-align: center;
+    box-shadow: none;
+}
+/* el estilo del input del formulario_info_item, poner el texto centrado 
+y que al pulsar no se vea los bordes negros sino el borde que hemos definido*/
+textarea{
+    border-radius: 5px;
+    border:2px solid #ceac5c;
+    background-color: #e6dcb1;
+    outline: none;
+}
+
+/* FIN DEL FORMULARIO */
